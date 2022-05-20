@@ -1,0 +1,57 @@
+###
+POST http://localhost:8080/api/players
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Jack Sparrow",
+  "balance_amount": 100.00,
+  "winnings_amount": 0.00
+}
+
+###
+POST http://localhost:8080/api/players
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "James Bond",
+  "balance_amount": 200.00,
+  "winnings_amount": 10.00
+}
+
+###
+GET http://localhost:8080/api/players
+Accept: application/json
+
+###
+GET http://localhost:8080/api/players/1
+Accept: application/json
+
+###
+PUT http://localhost:8080/api/players/cashout/2
+Accept: application/json
+
+###
+PUT http://localhost:8080/api/games/1/20/true
+Accept: application/json
+
+###
+GET http://localhost:8080/api/players/1
+Accept: application/json
+
+###
+PUT http://localhost:8080/api/players/cashout/1
+Accept: application/json
+
+###
+PUT http://localhost:8080/api/games/2/30/true
+Accept: application/json
+
+###
+GET http://localhost:8080/api/players/2
+Accept: application/json
+
+###
+GET http://localhost:8080/api/games
+Accept: application/json
